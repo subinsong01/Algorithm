@@ -1,7 +1,6 @@
 def solution(n):
-    num = n ** 0.5
-    if num == int(num):
-        return (num+1)**2
+    x = n ** 0.5
+    if x == int(x):
+        return (x+1)**2
     else:
         return -1
-    
