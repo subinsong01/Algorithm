@@ -17,11 +17,11 @@ def solution(s):
     
     for char in s:
         if char.isdigit():
-            result += char  
-        else:  
-            temp += char  
-            if temp in word_to_num:  
-                result += word_to_num[temp] 
-                temp = "" 
+            result += char
+        else:
+            temp += char
+            if temp in word_to_num:
+                result += word_to_num[temp]
+                temp = ""
                 
     return int(result)
