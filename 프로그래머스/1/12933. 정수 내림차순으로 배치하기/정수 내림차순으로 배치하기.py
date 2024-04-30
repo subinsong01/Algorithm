@@ -1,3 +1,4 @@
-def solution(n):  
+def solution(n):
     answer = sorted(str(n), reverse=True)
-    return int(''.join(answer))
+    answer = int(''.join(answer))
+    return answer
