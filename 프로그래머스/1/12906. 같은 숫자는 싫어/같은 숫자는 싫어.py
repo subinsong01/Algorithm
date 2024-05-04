@@ -1,10 +1,7 @@
 def solution(arr):
     answer = []
-    
-    for i in range(len(arr)):
-        if i == 0: #첫 번째 요소 담기 
+    for i in range(len(arr)-1):
+        if arr[i] != arr[i+1]:
             answer.append(arr[i])
-        elif arr[i] != arr[i-1]:
-            answer.append(arr[i])   
-    
+    answer.append(arr[-1])
     return answer
