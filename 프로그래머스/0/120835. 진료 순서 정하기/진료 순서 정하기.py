@@ -1,4 +1,8 @@
 def solution(emergency):
+    answer = []
     temp = sorted(emergency, reverse=True)
-    answer = [temp.index(i)+1 for i in emergency]
+    for i in emergency:
+        index = temp.index(i) + 1
+        answer.append(index)
+  
     return answer 
