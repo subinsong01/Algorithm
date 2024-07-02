@@ -1,9 +1,13 @@
-num = int(input())
-arr = []
+import sys
 
-for i in range(num):
-  arr.append(int(input()))
+input = sys.stdin.read
+output = sys.stdout.write
 
-arr.sort()
-for i in arr:
-  print(i)
+data = input().split()
+num = int(data[0])#수의 개수 
+arr = list(map(int, data[1:num+1])) #리스트로 받아오기 
+
+arr.sort() #정렬 
+
+result = "\n".join(map(str, arr)) + "\n" 
+output(result)
