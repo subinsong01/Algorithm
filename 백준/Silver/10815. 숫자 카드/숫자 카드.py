@@ -4,7 +4,7 @@ input = sys.stdin.readline
 N = int(input())
 num1 = set(map(int, input().split()))
 
-M = int(input().strip())
+M = int(input())
 num2 = list(map(int, input().split()))
 
 result = []
