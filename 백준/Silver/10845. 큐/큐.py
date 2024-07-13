@@ -1,38 +1,33 @@
+from collections import deque 
 import sys
-from collections import deque
+input = sys.stdin.readline
 
-n = int(sys.stdin.readline())
-queue = deque()
-
-def solution(command):
-    global queue
-    if command[0] == 'push':
-        queue.append(int(command[1]))
-    elif command[0] == 'pop':
-        if queue:
-            return queue.popleft()
-        else:
-            return -1
-    elif command[0] == 'size':
-        return len(queue)
-    elif command[0] == 'empty':
-        if queue:
-            return 0
-        else:
-            return 1
-    elif command[0] == 'front':
-        if queue:
-            return queue[0]
-        else:
-            return -1
-    elif command[0] == 'back':
-        if queue:
-            return queue[-1]
-        else:
-            return -1
+d = deque()
+n = int(input())  # 명령어의 개수를 입력받음
 
 for _ in range(n):
-    command = sys.stdin.readline().split()
-    result = solution(command)
-    if result is not None:
-        print(result)
+    command = input().split()
+    if command[0] == 'push':
+        d.append(int(command[1]))
+    elif command[0] == 'pop':
+        if d:
+            print(d.popleft())
+        else:
+            print("-1")
+    elif command[0] == 'size':
+        print(len(d))
+    elif command[0] == 'empty':
+        if d:
+            print("0")
+        else:
+            print("1")
+    elif command[0] == "front":
+        if d:
+            print(d[0])
+        else:
+            print("-1")
+    elif command[0] == "back":
+        if d:
+            print(d[-1])
+        else:
+            print("-1")
