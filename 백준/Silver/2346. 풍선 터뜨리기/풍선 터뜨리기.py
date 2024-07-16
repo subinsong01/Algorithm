@@ -1,4 +1,4 @@
-N = int(input().strip())
+N = int(input())
 papers = list(map(int, input().split()))
 
 balloons = list(range(1, N+1))  # 풍선 번호를 1부터 N까지 생성
