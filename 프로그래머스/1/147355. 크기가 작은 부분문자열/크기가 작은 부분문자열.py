@@ -1,10 +1,9 @@
 def solution(t, p):
     answer = 0
-    p_length = len(p)  # p의 길이
-
-    for i in range(len(t) - p_length + 1):
-        sub_str = t[i:i+p_length]  # t에서 길이가 p와 같은 부분 문자열 추출
-        if int(sub_str) <= int(p):  # 부분 문자열을 정수로 변환하여 p와 비교
-            answer += 1
-
+    p_len = len(p)
+    t_len = len(t)
+    p = int(p)
+    for i in range(0,t_len+1-p_len):
+        if int(t[i:i+p_len]) <= p:
+            answer+=1
     return answer
