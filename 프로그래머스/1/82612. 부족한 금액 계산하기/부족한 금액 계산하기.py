@@ -1,5 +1,10 @@
 def solution(price, money, count):
-    total_cost = sum(price * i for i in range(1, count + 1))
-    
-    return max(total_cost - money, 0)
 
+    for i in range(1,count+1):
+        money -= price*i
+    if money < 0:
+        money = abs(money)
+    else:
+        money = 0 
+
+    return money
