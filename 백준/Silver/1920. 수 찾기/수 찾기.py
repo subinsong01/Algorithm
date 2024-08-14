@@ -1,18 +1,16 @@
-N = int(input())  
+N = int(input())
 num1 = list(map(int, input().split()))
+M = int(input())
+num2 = list(map(int, input().split()))
 
-num1_set = set(num1)
+li = set(num1) #중복 제거
+ans = [ ]
 
-M = int(input())  
-num2 = list(map(int, input().split())) 
-
-result = []
-
-for m in num2:
-    if m in num1_set:
-        result.append(1)
+for i in num2:
+    if i in li:
+        ans.append(1)
     else:
-        result.append(0)
-
-for res in result:
-    print(res)
+        ans.append(0)
+        
+for answer in ans:
+    print(answer)
