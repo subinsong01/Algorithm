@@ -1,6 +1,10 @@
 def solution(arr1, arr2):
-    for i in range(len(arr1)): #배열의 행의 개수를 반환
-        for j in range(len(arr1[0])): #배열의 열의 개수를 반환
-            arr1[i][j]+=arr2[i][j]
- 
-    return arr1
+    answer = []
+    
+    for i in range(len(arr1)):
+        arr_sum = []
+        for j in range(len(arr1[0])):
+            arr_sum.append(arr1[i][j] + arr2[i][j])
+        answer.append(arr_sum)
+            
+    return answer
