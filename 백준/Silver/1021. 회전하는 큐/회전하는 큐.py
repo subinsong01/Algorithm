@@ -9,12 +9,12 @@ cnt = 0  # 이동 횟수
 
 for i in positions:
 
-    target_idx = queue.index(i)
-    if target_idx <= len(queue) // 2:
-        cnt += target_idx
-        queue.rotate(-target_idx) 
+    target = queue.index(i)
+    if target <= len(queue) // 2:
+        cnt += target
+        queue.rotate(-target) 
     else:
-        right_moves = len(queue) - target_idx
+        right_moves = len(queue) - target
         cnt += right_moves
         queue.rotate(right_moves) 
     
