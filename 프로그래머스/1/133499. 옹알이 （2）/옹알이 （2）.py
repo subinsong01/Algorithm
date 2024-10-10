@@ -1,10 +1,13 @@
 def solution(babbling):
     answer = 0
-    able = ["aya", "ye", "woo", "ma"]
-    for i in babbling:
-        for a in able:
-            if a * 2 not in i:
-                i = i.replace(a, ' ')
-        if i.isspace():
+    words = ["aya", "ye", "woo", "ma"]
+    
+    for b in babbling:
+        for w in words:
+            if w * 2 not in b:
+                b = b.replace(w, " ")
+                
+        if b.strip() == "":
             answer += 1
+            
     return answer
