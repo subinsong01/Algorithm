@@ -1,9 +1,11 @@
 function solution(n) {
-    const sqrt = Math.sqrt(n);
+    var answer = 0;
     
-    if (sqrt % 1 === 0) { 
-        return (sqrt + 1) * (sqrt + 1); 
+    if (Number.isInteger(Math.sqrt(n))) {
+        answer = Math.pow(Math.sqrt(n) + 1, 2);
     } else {
         return -1;
     }
+    
+    return answer;
 }
