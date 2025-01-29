@@ -1,10 +1,10 @@
 # [level 0] 가위 바위 보 - 120839 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120839?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120839) 
 
 ### 성능 요약
 
-메모리: 10 MB, 시간: 0.01 ms
+메모리: 32.9 MB, 시간: 0.10 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 05월 28일 14:53:29
+2025년 01월 29일 22:40:06
 
 ### 문제 설명
 
