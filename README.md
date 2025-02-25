@@ -1,2 +1,3 @@
-# Programmers
-This is a auto push repository for Programmers
+# 모든 코딩테스트를 통과하기 위해😼
+
+얼른 파이썬에서 자스로 바꿔야지 ..🤧
